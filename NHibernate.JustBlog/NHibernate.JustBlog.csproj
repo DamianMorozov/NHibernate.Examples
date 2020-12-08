@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>7bb8eb76-3250-44af-b6ec-8963de9cd91b</UserSecretsId>
+    <Version>0.1.15</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -14,5 +15,9 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NHibernate.JustBlog.Core\NHibernate.JustBlog.Core.csproj" />
+  </ItemGroup>
 
 </Project>
