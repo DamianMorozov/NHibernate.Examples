@@ -6,6 +6,7 @@
 	[Description] nvarchar(255) null,
 	[MetaData] nvarchar(255) null,
 	[URL] nvarchar(255) null,
+	[Published] bit not null default 0,
 	[CategoryId] uniqueidentifier null,
 	[PostedDate] date null,
 	[PostedAuthor] nvarchar(255) null,

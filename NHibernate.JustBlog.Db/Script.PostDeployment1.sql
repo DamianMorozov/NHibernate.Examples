@@ -51,21 +51,27 @@ end
 if exists (select 1 from [JustBlog].[sys].[tables] where [name] = 'Post') begin
     declare @categoryId uniqueidentifier
     set @categoryId = (select [Id] from [dbo].[Category] where [dbo].[Category].[Name] = 'Category 1')
-    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[PostedDate],[PostedAuthor],[EditedAuthor])
-        values ('Title 1','Short description','Description','Meta data','http://test.com/title1',@categoryId,
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 1','Short description','Description','Meta data','http://test.com/title1',@categoryId,1,
         getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
-    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[PostedDate],[PostedAuthor],[EditedAuthor])
-        values ('Title 2','Short description','Description','Meta data','http://test.com/title2',@categoryId,
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 2','Short description','Description','Meta data','http://test.com/title2',@categoryId,1,
         getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
     set @categoryId = (select [Id] from [dbo].[Category] where [dbo].[Category].[Name] = 'Category 2')
-    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[PostedDate],[PostedAuthor],[EditedAuthor])
-        values ('Title 3','Short description','Description','Meta data','http://test.com/title3',@categoryId,
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 3','Short description','Description','Meta data','http://test.com/title3',@categoryId,1,
         getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
-    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[PostedDate],[PostedAuthor],[EditedAuthor])
-        values ('Title 4','Short description','Description','Meta data','http://test.com/title4',@categoryId,
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 4','Short description','Description','Meta data','http://test.com/title4',@categoryId,1,
         getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
-    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[PostedDate],[PostedAuthor],[EditedAuthor])
-        values ('Title 5','Short description','Description','Meta data','http://test.com/title5',null,
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 5','Short description','Description','Meta data','http://test.com/title5',null,1,
+        getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 6','Short description','Description','Meta data','http://test.com/title6',null,0,
+        getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
+    insert into [dbo].[Post] ([Title],[ShortDescription],[Description],[MetaData],[URL],[CategoryId],[Published],[PostedDate],[PostedAuthor],[EditedAuthor])
+        values ('Title 7','Short description','Description','Meta data','http://test.com/title7',null,0,
         getdate(),'Firstname Lastname Surname','Firstname Lastname Surname')
 end
 if exists (select 1 from [JustBlog].[sys].[tables] where [name] = 'PostTagMap') begin
