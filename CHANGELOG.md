@@ -6,10 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.15] - 2020-12-08
+## [0.1.20] - 2020-12-08
 ### Added
 - NHibernate.JustBlog.Core project
 - NHibernate.JustBlog.Db project
+- NHibernate.JustBlog.MVC project
+### Removed
+- NHibernate.JustBlog project
 
 ## [0.1.10] - 2020-12-07
 ### Added

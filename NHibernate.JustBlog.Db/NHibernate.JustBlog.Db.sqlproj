@@ -22,7 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <DacVersion>0.1.15.0</DacVersion>
+    <DacVersion>0.1.20.0</DacVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -64,6 +64,7 @@
     <Build Include="Tables\dbo.Post.sql" />
     <Build Include="Tables\dbo.Category.sql" />
     <Build Include="Tables\dbo.Tag.sql" />
+    <Build Include="Tables\dbo.PostTagMap.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:58672",
-      "sslPort": 44378
+      "applicationUrl": "http://localhost:59515",
+      "sslPort": 44349
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "NHibernate.JustBlog": {
+    "NHibernate.JustBlog.MVC": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
