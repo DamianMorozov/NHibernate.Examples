@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="3.1.0" />
-    <PackageReference Include="NHibernate" Version="5.3.5" />
+    <PackageReference Include="NHibernate" Version="5.4.9" />
     <PackageReference Include="Ninject" Version="4.0.0-beta-0134" />
     <PackageReference Include="Ninject.Web.Common" Version="3.3.2" />
   </ItemGroup>
